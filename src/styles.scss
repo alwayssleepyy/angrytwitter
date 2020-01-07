@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #151E29;
+    min-height: 100vh;
+}
+
+.container {
+    display:flex;
+
+    & > *{
+        height:100vh;
+    }
+
+
+}
+
+
+/////////////////////////////
+// TABS
+.tabs {
+    color:#fff;
+    
+    &__head {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__item{
+            padding:.8rem;
+            display:flex;
+            margin-bottom:1rem;
+
+            &__heading {
+                font-size: 1.8rem;
+                align-self:center;
+                margin-left:2.2rem;
+            }
+        }
+    }
+}
+/////////////////////////
+// FEED
+.feed {
+    color:white;
+    font-size: 1.5rem;
+    padding:1rem;
+    width: 100%;
+
+    &__item {
+        padding:1rem;
+        border:1px solid grey;
+        width:40%;
+        display:flex;
+        
+        &__avatar {
+            margin-right: 1rem;
+            padding:.5rem;
+        }
+    
+        &__head {
+            font-weight:700;
+        }
+
+        &__main {
+            padding-right:15rem;
+        }
+
+        &__floor {
+            display:flex;
+            color:grey;
+            justify-content: space-between;
+
+           //icon sizing not workingproperly
+        }
+
+        &__image{
+            padding:1rem;
+            border-radius:2rem;
+            height:30rem;
+            width:90%;
+        }
+    }
+}
+
+//////////////////////////////
+// INFOMENU
+
+.infomenu{
+    padding:1rem;
+    color:white;
+    background-color: #243447;
+    border-radius: 1rem;;
+    margin: 2rem 2rem 0 0;
+    &__head{
+        font-size:2rem;
+    }
+    &__body{
+        padding:1rem;
+        display:flex;
+        width:20rem;
+        font-size:1.3rem;
+        border-top: solid 1px grey;
+
+        &__avatar {
+            margin-right:1rem;
+        }
+
+        &__content{
+            &__heading1{
+                font-weight:700;
+            }
+        }
+    }
+}
+
+//////////////////////
+// BUTTON
+
+.btn {
+    border:none;
+    font-size:1.8rem;
+    padding:1.5rem 8rem;
+    border-radius:100px;
+    color:white;
+    cursor:pointer;
+
+    &--default {
+        background-color:none;
+    }
+
+    &--primary {
+        background-color: rgb(29,161,242);
+    }
+}
+
+.avatar {
+    height:5rem;
+    width:5rem;
+    border-radius:50%;
+}
+
+/////////////////////////
+// ICON
+.icon {
+    height: 3rem;
+    width: 3rem;
+    fill: currentColor;
+}
